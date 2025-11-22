@@ -1,7 +1,6 @@
 # PROJECT 7 COMPLETION SUMMARY
 
 **Project**: AWS Security Hardening  
-**Date**: November 21, 2025  
 **Duration**: ~20 minutes
 
 ---
@@ -61,20 +60,6 @@ devops-day3-alb-sg     - Intentionally open (load balancer)
 2. Add VPN or bastion host for SSH access
 3. Enable MFA on root account (manual step)
 4. Review IAM users and remove unused ones
-
----
-
-## Interview Talking Points
-
-**Q: How do you handle secrets in your applications?**
-> "I use AWS Secrets Manager to store sensitive credentials. Applications retrieve secrets at runtime using IAM roles, so passwords are never in code or environment variables. This allows for automatic rotation and audit trails of secret access."
-
-**Q: How do you detect security threats in AWS?**
-> "I enable GuardDuty which uses machine learning to detect anomalies like compromised instances, unauthorized access patterns, or data exfiltration attempts. It integrates with SNS to alert our team immediately when threats are detected."
-
-**Q: How do you maintain audit trails for compliance?**
-> "CloudTrail logs every API call across all regions. These logs are stored in S3 with versioning and encryption. For compliance audits, I can show exactly who did what, when, and from which IP address."
-
 ---
 
 ## Cost Analysis
